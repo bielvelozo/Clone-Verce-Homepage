@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #000;
+  --gray: #888;
+  --white: #fff;
+}
+
+*,
+input,
+button {
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  background: var(--black);
+  color: var(--gray);
+  font-size: 62.5%;
+}
+
+#wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@-webkit-keyframes colorCycle {
+  0%, 55% {
+    filter: brightness(0) invert(1);
+  }
+  11%, 33% {
+    filter: none;
+  }
+}
+
+@keyframes colorCycle {
+  0%, 55% {
+    filter: brightness(0) invert(1);
+  }
+  11%, 33% {
+    filter: none;
+  }
+}
+main {
+  max-width: 104.8rem;
+  padding: 5.6rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+main h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 12.8rem;
+  line-height: 12.8rem;
+  letter-spacing: -0.6rem;
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main h1 span {
+  filter: brightness(0) invert(1);
+  -webkit-background-clip: text;
+          background-clip: text;
+  --webkit-background-clip:text;
+  --webkit-text-fill-color:transparent;
+  -webkit-animation: colorCycle 10s ease infinite;
+          animation: colorCycle 10s ease infinite;
+}
+main h1 span:nth-child(1) {
+  background-image: linear-gradient(90deg, #007cf0, #00dfd8);
+}
+main h1 span:nth-child(2) {
+  background-image: linear-gradient(90deg, #7928ca, #ff0080);
+  -webkit-animation-delay: 3.33s;
+          animation-delay: 3.33s;
+}
+main h1 span:nth-child(3) {
+  background-image: linear-gradient(90deg, #ff4d4d, #f9cb28);
+  -webkit-animation-delay: 6.66s;
+          animation-delay: 6.66s;
+}
+main .buttons {
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+}
+main .buttons > button {
+  background: var(--white);
+  color: var(--black);
+  border-radius: 0.4rem;
+  margin: 1.2rem;
+  padding: 1.5rem 4.5rem;
+  border: 1px solid var(--white);
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .buttons > button.outlined {
+  background-color: transparent;
+  color: var(--gray);
+  border-color: var(--gray);
+}
+main .buttons > button:hover {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+main h2 {
+  margin: 6.4rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.04rem;
+  text-align: center;
+}
+
+::-moz-selection {
+  background-color: #f81ce5;
+  color: var(--white);
+}
+
+::selection {
+  background-color: #f81ce5;
+  color: var(--white);
+}
+
+header {
+  max-width: 104.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 2.4rem;
+}
+header .left {
+  height: 2.6rem;
+}
+header .left img {
+  height: 100%;
+}
+header .middle ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+header .middle ul li a {
+  font-size: 1.4rem;
+  padding: 0.8rem 1.6rem;
+  color: var(--gray);
+  text-decoration: none;
+}
+header .middle ul li a + a {
+  margin-left: 1.2rem;
+}
+header .right {
+  margin-left: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+header .right .conf {
+  height: 3.2rem;
+  position: relative;
+}
+header .right .conf span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: var(--white);
+  font-size: 1.4rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .right .avatar {
+  margin-left: 0.8rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+footer {
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.32rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}/*# sourceMappingURL=styles.css.map */
