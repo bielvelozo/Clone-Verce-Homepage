@@ -1,4 +1,4 @@
 # Vercel Homepage
-A simple clone of vercel's stylish homepage using sass.
+A simple and responsive clone of Vercel's homepage using sass.
 
 link: https://bielvelozo.github.io/Clone-Vercel-Homepage/
