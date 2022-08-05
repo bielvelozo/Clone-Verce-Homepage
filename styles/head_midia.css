@@ -1,0 +1,262 @@
+main h1 {
+    font-size: 13rem;
+    line-height: 12.7rem;
+}
+
+
+
+@media (max-width:950px) {
+    
+
+  main {
+    z-index: -1;
+  }
+
+  header {
+    user-select: none;
+  }
+
+   header .middle {
+    display: none;
+  }
+
+  header .right {
+    display: none;
+  }
+
+    
+
+    .one,
+    .two
+     {
+        background-color: white;
+        height: 1px;
+        width: 100%;
+        margin: 8px auto;
+
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        width: 24px;
+        height: 40px;
+
+        position: absolute;
+        right: 25px;
+        top: 15px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        
+        top:0;
+        left: 0;
+
+        width: 100vw;
+        height: 100vh;
+        padding: 0 24px;
+
+        background-color: black;
+
+        display: flex;
+        flex-direction: column-reverse;
+
+        justify-content: center;
+        align-items: flex-start;
+        
+       
+        
+      
+    }
+
+    .left {
+        position:absolute;
+        top: 15px;
+        left: 25px;
+    }
+
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(6px , 4px);
+    }
+    .menu-section.on .menu-toggle .two {
+        transform: rotate(-45deg) translate(2px , -1px);
+    }
+
+    .mobile_menu {
+        padding: 0 24px 24px 24px;
+        width: 100%;
+        
+    }
+
+    .menu-section.on .mobile_buttons {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 5rem;
+        
+        
+    }
+
+    .menu-section.on .mobile_buttons button{
+        padding: 8px;
+        margin-bottom: 15px;
+
+        font-size: 1.5rem;
+        color: var(--white);
+
+        border-radius: 5px;
+
+        cursor: pointer;
+        transition: all .2s ease;
+
+
+
+    }
+
+    .menu-section.on .mobile_buttons button:first-child {
+        background-color: transparent;
+        border: 1px solid #333;
+        color: #888;
+    }
+
+    .menu-section.on .mobile_buttons button:first-child:hover {
+        
+        color: var(--white);
+        border-color:var(--white) ;
+    }
+
+
+
+    .menu-section.on .mobile_buttons button:last-child {
+        background-color: var(--blue);
+        border:1px solid var(--blue);
+
+        
+    }
+
+    .menu-section.on .mobile_buttons button:last-child:hover {
+        background-color: transparent;
+        color: var(--blue);
+    }
+
+    header .menu-section.on .right {
+        width: 100%;
+        height: auto;
+        max-width: none;
+       
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 10.1rem;
+        padding-bottom: 50px;
+    }
+
+    .menu-section.on .conf ul li:first-child{
+        display: none;
+    } 
+
+    
+    header .menu-section.on .right .conf ul {
+        
+        
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+       
+    }
+
+
+    .menu-section.on .conf ul li {
+        height: 40px;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius:8px ;
+        font-weight: 600;
+        
+
+        
+
+        transition:  .2s ease-in-out;
+        
+    }
+
+    .menu-section.on .conf ul li:nth-child(2) {
+        border: 1px solid #333 ;
+        
+    }
+
+    .menu-section.on .conf ul li:nth-child(2):hover {
+        
+        border-color:var(--white) ;   
+       
+    }
+
+    .menu-section.on .conf ul li:nth-child(3) {
+
+        background-color: #0070f3;
+        border: 1px solid #0070f3 ;
+
+        margin-top: 16px;
+    }
+    .menu-section.on .conf ul li:nth-child(3) a {
+        color: var(--white);
+    }
+
+    .menu-section.on .conf ul li:nth-child(3):hover , .conf ul li:nth-child(3) a:hover {
+        background-color: transparent;
+        color: #0070f3;
+        
+    }
+
+   
+
+    .menu-section.on .conf ul li a {
+        padding: 0;
+        text-align: center;
+    }
+
+    header .menu-section.on .middle {
+        width: 100%;
+        padding-bottom: 200px;
+
+        display: block;
+        
+    }
+
+    header .menu-section.on .middle ul{
+        display: block;
+        padding-left: 0;   
+    }
+
+    .menu-section.on .middle ul li a {
+        padding: 0;
+        font-size: 1.54rem;
+        color: var(--white);
+        
+    }
+
+    .menu-section.on .middle ul li {
+        width: 100%;
+        height: 47px;
+        border-bottom:1px solid #333 ;
+        
+        display: flex;
+        align-items: center;
+
+        transition: all .2s ease;
+
+        cursor: pointer;
+
+    }
+
+    .menu-section.on .middle ul li:hover {
+        background-color: rgba(142, 152, 172 , 0.1);
+    }
+}
+
